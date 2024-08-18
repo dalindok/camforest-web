@@ -14,7 +14,7 @@ function Search() {
 //     console.log('Searching for:', searchTerm);
 //   };
     return (
-        <div className='relative w-full h-screen'>
+        <div className='relative w-full h-screen mt-10'>
             <img src={trees} alt="background of search" className='object-cover h-screen sm:object-fill sm:w-full rounded-md'/>
             <div className="flex items-center space-x-80">
             <input
