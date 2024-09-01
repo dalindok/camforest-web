@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { BiSearchAlt } from "react-icons/bi";
-import Bg from "../assets/Bg.jpg"
+import Bg from "../../assets/assets/Bg.jpg"
 
 function Search() {
     const [searchTerm, setSearchTerm] = useState('');
