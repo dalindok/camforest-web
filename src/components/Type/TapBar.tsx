@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../assets/assets/logo.jpg';
+import logo from '../../assets/pageType/logo.jpg';
 import { TbLanguage } from "react-icons/tb";
 
 function TapBar() {

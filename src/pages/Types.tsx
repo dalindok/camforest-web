@@ -1,7 +1,7 @@
 import React from 'react';
-import TapBar from '../components/components/TapBar';
-import Search from '../components/components/Search';
-import Type from '../components/components/Type';
+import TapBar from '../components/Type/TapBar';
+import Search from '../components/Type/Search';
+import Type from '../components/Type/Type';
 
 function type() {
     return (
