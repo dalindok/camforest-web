@@ -1,5 +1,5 @@
 import React from 'react';
-import WhyUS from '../../assets/assets/WhyUs.jpg'
+import WhyUS from '../../assets/pageHomepage/WhyUs.jpg'
 
 function WhyUs() {
     return (

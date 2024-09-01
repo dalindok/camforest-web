@@ -1,6 +1,6 @@
 import React from 'react';
-import leaf from '../../assets/assets/leaf.jpg';
-import logo from '../../assets/assets/logo.png';
+import leaf from '../../assets/pageHomepage/leaf.jpg';
+import logo from '../../assets/pageHomepage/logo.png';
 
 function Board() {
     return (
