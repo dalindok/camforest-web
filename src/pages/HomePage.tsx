@@ -1,8 +1,8 @@
 import React from 'react';
-import TapBar from '../components/TapBar';
-import Board from '../components/Board';
-import Article from '../components/Article';
-import WhyUs from '../components/WhyUs';
+import TapBar from '../components/components/TapBar';
+import Board from '../components/components/Board';
+import Article from '../components/components/Article';
+import WhyUs from '../components/components/WhyUs';
 
 function HomePage() {
     return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import Cheung_Chab from '../assets/Cheung Chap.jpg';
+import Cheung_Chab from '../../assets/assets/Cheung Chap.jpg';
 
 function Article() {
     return (
