@@ -4,7 +4,7 @@ import Cheung_Chab from '../../assets/assets/Cheung Chap.jpg';
 function Article() {
     return (
         <div className='text-center self-center'>
-            <p className='font-bold text-3xl mt-20 underline underline-offset-8'>
+            <p className='font-bold  text-3xl mt-20 underline underline-offset-8'>
                 Lastest Article</p>
             <div className='flex flex-row m-10'>
                 <div className='flex flex-col shadow shadow-slate-300 m-10 rounded-lg bg-white '>
