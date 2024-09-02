@@ -1,4 +1,4 @@
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { TreeImages } from "../../utils/images";
 const ArticleData = [
   {
@@ -33,10 +33,10 @@ const ArticleData = [
   },
 ];
 function Article() {
-  // const navigation = useNavigate();
-  // const onNavigateArticleDetail = () => {
-  //   // navigation("/type/tree");
-  // };
+  const navigation = useNavigate();
+  const onNavigateArticleDetail = (id: number) => {
+    navigation(`/article/${id}`);
+  };
   return (
     <div className="m-10">
       <p className="underline underline-offset-8 font-bold text-center mb-10">
@@ -45,7 +45,9 @@ function Article() {
       <div className="grid grid-cols-3 grid-flow-row gap-y-10 place-items-center">
         {ArticleData.map((item, index) => {
           return (
-            <div className="rounded-lg shadow shadow-slate-300 w-80 h-96 overflow-hidden">
+            <div
+              onClick={() => onNavigateArticleDetail(item.id)}
+              className="rounded-lg shadow shadow-slate-300 w-80 h-96 overflow-hidden">
               <img
                 src={TreeImages.cheungChap}
                 alt="Type of tree"
