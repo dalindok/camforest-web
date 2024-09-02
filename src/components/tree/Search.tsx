@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import flower from "../../assets/pageTree/flower.jpeg";
+import { useState } from "react";
 import { BiSearchAlt } from "react-icons/bi";
+import { TreeImages } from "../../utils/images";
 
 function Search() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -12,7 +12,7 @@ function Search() {
   return (
     <div className="relative w-full h-screen mt-5">
       <img
-        src={flower}
+        src={TreeImages.flower}
         alt="background of search"
         className="object-cover h-screen w-full rounded-md"
       />

@@ -1,6 +1,5 @@
-import dalin from "../../assets/photoaboutus/dalin.png";
-import nita from "../../assets/photoaboutus/nita.png";
-import raksa from "../../assets/photoaboutus/raksa.png";
+import { AboutUsImages } from "../../utils/images";
+
 function Ourteam() {
   return (
     <div>
@@ -10,7 +9,7 @@ function Ourteam() {
           <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="text-center">
               <img
-                src={dalin}
+                src={AboutUsImages.dalin}
                 alt="Team Member 1"
                 className="w-40 h-40 rounded-full mx-auto image-contain"
                 style={{
@@ -21,7 +20,7 @@ function Ourteam() {
             </div>
             <div className="text-center">
               <img
-                src={nita}
+                src={AboutUsImages.nita}
                 alt="Team Member 2"
                 className="w-40 h-40 rounded-full mx-auto image-contain"
                 style={{
@@ -32,7 +31,7 @@ function Ourteam() {
             </div>
             <div className="text-center">
               <img
-                src={raksa}
+                src={AboutUsImages.raksa}
                 alt="Team Member 3"
                 className="w-40 h-40 rounded-full mx-auto image-contain"
                 style={{

@@ -1,7 +1,7 @@
-import TapBar from "../components/Homepage/TapBar";
-import Board from "../components/Homepage/Board";
-import Article from "../components/Homepage/Article";
-import WhyUs from "../components/Homepage/WhyUs";
+import TapBar from "../components/home_page/TapBar";
+import Board from "../components/home_page/Board";
+import Article from "../components/home_page/Article";
+import WhyUs from "../components/home_page/WhyUs";
 
 function HomePage() {
   return (

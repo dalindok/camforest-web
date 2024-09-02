@@ -1,10 +1,13 @@
-import React from "react";
-import WhyUS from "../../assets/pageHomepage/WhyUs.jpg";
+import { HomeImages } from "../../utils/images";
 
 function WhyUs() {
   return (
     <div className="flex flex-row mt-10 bg-white">
-      <img src={WhyUS} alt="righ side of Why us" className="w-1/2 h-1/2 p-2" />
+      <img
+        src={HomeImages.whyUs}
+        alt="righ side of Why us"
+        className="w-1/2 h-1/2 p-2"
+      />
       <div className="text-center p-20">
         <p className="font-bold text-4xl p-4 pb-7">Why Us?</p>
         <p className="text-xl">

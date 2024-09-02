@@ -1,8 +1,8 @@
 import React from "react";
-import Aboutus from "../components/aboutus/Aboutus";
-import Mission from "../components/aboutus/Mission";
-import Ourteam from "../components/aboutus/Ourteam";
-import TapBar from "../components/Homepage/TapBar";
+import Aboutus from "../components/about_us/Aboutus";
+import Mission from "../components/about_us/Mission";
+import Ourteam from "../components/about_us/Ourteam";
+import TapBar from "../components/home_page/TapBar";
 
 function AboutUsPage() {
   return (

@@ -1,12 +1,11 @@
-import aboutus from "../../assets/photoaboutus/aboutus.png";
+import { AboutUsImages } from "../../utils/images";
 
 function Aboutus() {
   return (
     <div className="w-screen h-screen flex flex-row pb-10 pt-3">
       <div
         className="w-screen flex flex-col items-center justify-center bg-cover bg-center"
-        style={{ backgroundImage: `url(${aboutus})` }}
-      >
+        style={{ backgroundImage: `url(${AboutUsImages.aboutUs})` }}>
         <div className="text-center">
           <h1 className="text-6xl font-bold text-white mt-2">About Us</h1>
           <p className="text-2xl text-white mt-8">

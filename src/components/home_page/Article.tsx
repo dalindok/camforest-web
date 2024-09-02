@@ -1,4 +1,4 @@
-import Cheung_Chab from "../../assets/pageHomepage/Cheung Chap.jpg";
+import { HomeImages } from "../../utils/images";
 
 function Article() {
   return (
@@ -9,7 +9,7 @@ function Article() {
       <div className="flex flex-row m-10">
         <div className="flex flex-col shadow shadow-slate-300 m-10 rounded-lg bg-white ">
           <img
-            src={Cheung_Chab}
+            src={HomeImages.cheungChap}
             alt="Cheung Chab"
             className="w-full h-auto rounded-lg "
           />
@@ -22,7 +22,7 @@ function Article() {
         </div>
         <div className="flex flex-col shadow shadow-slate-300 m-10 rounded-lg bg-white">
           <img
-            src={Cheung_Chab}
+            src={HomeImages.cheungChap}
             alt="Cheung Chab"
             className="w-full h-auto rounded-lg"
           />
@@ -35,7 +35,7 @@ function Article() {
         </div>
         <div className="flex flex-col shadow shadow-slate-300 m-10 rounded-lg bg-white">
           <img
-            src={Cheung_Chab}
+            src={HomeImages.cheungChap}
             alt="Cheung Chab"
             className="w-full h-auto rounded-lg"
           />
