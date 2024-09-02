@@ -1,24 +1,39 @@
 import { HomeImages } from "../../utils/images";
+import Slider from "react-slick";
 
-function Board() {
+interface IBanner {
+  data: IHome.Banner[];
+}
+
+const Board = (props: IBanner) => {
+  const settings = {
+    // dots: true, // Show navigation dots
+    infinite: true, // Enable looping
+    speed: 500, // Transition speed
+    slidesToShow: 1, // Show one slide at a time
+    slidesToScroll: 1, // Scroll one slide at a time
+    autoplay: true, // Enable auto swipe
+    autoplaySpeed: 1500, // Time between swipes (in ms)
+    fade: true, // Fade transition between slides
+  };
+
   return (
-    <div className="relative p-5">
-      <img
-        src={HomeImages.leaf}
-        alt="board"
-        className="w-full h-screen object-cover"
-      />
-      <img
-        src={HomeImages.logo}
-        alt="logo"
-        className="absolute top-10 right-72 w-60 h-auto rounded-full"
-      />
-      <div className="absolute flex items-center flex-col top-64 right-28 p-10">
-        <p className="text-4xl font-bold italic">CamForest</p>
-        <p className="text-5xl m-10 font-light">We care about nature.</p>
-      </div>
+    <div>
+      {props.data.map((item, index) => {
+        return (
+          <Slider {...settings}>
+            <div className="relative p-5">
+              <img src={item.imageUrl} alt="board" className="object-cover" />
+              <div className="absolute flex items-center flex-col bottom-20 right-28 p-10">
+                <p className="text-4xl font-bold italic">{item.title}</p>
+                <p className="text-5xl m-10 font-light">{item.description}</p>
+              </div>
+            </div>
+          </Slider>
+        );
+      })}
     </div>
   );
-}
+};
 
 export default Board;
