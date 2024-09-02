@@ -1,30 +1,27 @@
-import React from "react";
 import Cheung_Chab from "../../assets/pageType/Cheung Chap.jpg";
 import { useNavigate } from "react-router-dom";
 function TypeOfTree() {
   const navigation = useNavigate();
   const onNavigateTree = () => {
-    navigation("tree");
+    navigation("/type/tree");
   };
   return (
     <div>
-      <button onClick={onNavigateTree} className="">
-        <div className="flex flex-row bg-white shadow-ml p-10 m-10 rounded-lg shadow shadow-slate-300">
-          <img
-            src={Cheung_Chab}
-            alt="Tree"
-            className="w-80 h-auto rounded-lg"
-          />
-          <div className="flex flex-col ml-auto pl-48">
-            <p className="font-bold text-center text-3xl">Flower</p>
-            <p className="text-xl mt-14 font-light">
-              Plant's reproductive structure, featuring petals, stamens, and
-              pistils, essential for seed production and attracting pollinators.
-            </p>
-          </div>
+      <div
+        onClick={onNavigateTree}
+        className="flex flex-row bg-white shadow-ml p-10 m-10 rounded-lg shadow shadow-slate-300 cursor-pointer">
+        <img src={Cheung_Chab} alt="Tree" className="w-80 h-auto rounded-lg" />
+        <div className="flex flex-col ml-auto pl-48">
+          <p className="font-bold text-center text-3xl">Flower</p>
+          <p className="text-xl mt-14 font-light">
+            Plant's reproductive structure, featuring petals, stamens, and
+            pistils, essential for seed production and attracting pollinators.
+          </p>
         </div>
-      </button>
-      <div className="flex flex-row bg-white shadow-ml p-10 m-10 rounded-lg shadow shadow-slate-300">
+      </div>
+      <div
+        onClick={onNavigateTree}
+        className="flex flex-row bg-white shadow-ml p-10 m-10 rounded-lg shadow shadow-slate-300 cursor-pointer">
         <img src={Cheung_Chab} alt="Tree" className="w-80 h-auto rounded-lg" />
         <div className="flex flex-col ml-auto pl-48">
           <p className="font-bold text-center text-3xl">Ivy</p>
@@ -34,7 +31,9 @@ function TypeOfTree() {
           </p>
         </div>
       </div>
-      <div className="flex flex-row bg-white shadow-ml p-10 m-10 rounded-lg shadow shadow-slate-300">
+      <div
+        onClick={onNavigateTree}
+        className="flex flex-row bg-white shadow-ml p-10 m-10 rounded-lg shadow shadow-slate-300 cursor-pointer">
         <img src={Cheung_Chab} alt="Tree" className="w-80 h-auto rounded-lg" />
         <div className="flex flex-col ml-auto pl-48">
           <p className="font-bold text-center text-3xl">Tree</p>

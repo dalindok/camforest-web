@@ -1,6 +1,11 @@
 import React from "react";
 import CheungChap from "../../assets/pageTree/CheungChap.jpg";
+import { useNavigate } from "react-router-dom";
 function Article() {
+  const navigation = useNavigate();
+  const onNavigateArticleDetail = () => {
+    // navigation("/type/tree");
+  };
   return (
     <div className="m-10">
       <p className="underline underline-offset-8 font-bold text-center">
