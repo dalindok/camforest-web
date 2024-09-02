@@ -1,7 +1,4 @@
-import React from "react";
-import jab from "../../assets/photoaboutus/jab.png";
-import kury from "../../assets/photoaboutus/kury.png";
-import tectorius from "../../assets/photoaboutus/tectorius.png";
+import { AboutUsImages } from "../../utils/images";
 
 function Mission() {
   return (
@@ -19,10 +16,18 @@ function Mission() {
           </div>
 
           <div className="grid grid-cols-2 gap-2 pr-4">
-            <img src={jab} alt="Tree 1" className="rounded-lg shadow-lg" />
-            <img src={kury} alt="Tree 2" className="rounded-lg shadow-lg" />
             <img
-              src={tectorius}
+              src={AboutUsImages.jab}
+              alt="Tree 1"
+              className="rounded-lg shadow-lg"
+            />
+            <img
+              src={AboutUsImages.kury}
+              alt="Tree 2"
+              className="rounded-lg shadow-lg"
+            />
+            <img
+              src={AboutUsImages.tectorius}
               alt="Tree 3"
               className="col-span-2 rounded-lg shadow-lg"
             />

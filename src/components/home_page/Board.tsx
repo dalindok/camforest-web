@@ -1,13 +1,15 @@
-import React from "react";
-import leaf from "../../assets/pageHomepage/leaf.jpg";
-import logo from "../../assets/pageHomepage/logo.png";
+import { HomeImages } from "../../utils/images";
 
 function Board() {
   return (
     <div className="relative p-5">
-      <img src={leaf} alt="board" className="w-full h-screen object-cover" />
       <img
-        src={logo}
+        src={HomeImages.leaf}
+        alt="board"
+        className="w-full h-screen object-cover"
+      />
+      <img
+        src={HomeImages.logo}
         alt="logo"
         className="absolute top-10 right-72 w-60 h-auto rounded-full"
       />

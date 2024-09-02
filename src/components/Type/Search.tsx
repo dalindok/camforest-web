@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { BiSearchAlt } from "react-icons/bi";
-import Bg from "../../assets/pageType/Bg.jpg";
+import { PageTypeImages } from "../../utils/images";
 
 function Search() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -16,7 +16,7 @@ function Search() {
   return (
     <div className="relative w-full h-screen mt-5">
       <img
-        src={Bg}
+        src={PageTypeImages.bg}
         alt="background of search"
         className="object-cover h-screen sm:object-fill sm:w-full rounded-md"
       />
