@@ -1,4 +1,3 @@
-import React from "react";
 import TapBar from "../components/Homepage/TapBar";
 import Board from "../components/Homepage/Board";
 import Article from "../components/Homepage/Article";

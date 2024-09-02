@@ -1,10 +1,10 @@
-import './App.css';
-import HomePage from './pages/HomePage';
-
+// import HomePage from "./pages/HomePage";
+// import Types from "./pages/Types";
+import RouteNavigation from "./routes/Route";
 function App() {
   return (
-    <div className="App">
-      <HomePage/>
+    <div className="">
+      <RouteNavigation />
     </div>
   );
 }

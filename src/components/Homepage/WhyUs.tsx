@@ -4,7 +4,7 @@ import WhyUS from "../../assets/pageHomepage/WhyUs.jpg";
 function WhyUs() {
   return (
     <div className="flex flex-row mt-10 bg-white">
-      <img src={WhyUS} alt="righ side of Why us" className="w-1/2 h-1/2" />
+      <img src={WhyUS} alt="righ side of Why us" className="w-1/2 h-1/2 p-2" />
       <div className="text-center p-20">
         <p className="font-bold text-4xl p-4 pb-7">Why Us?</p>
         <p className="text-xl">
