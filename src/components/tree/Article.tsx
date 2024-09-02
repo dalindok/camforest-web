@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import { TreeImages } from "../../utils/images";
 const ArticleData = [
   {
@@ -33,10 +33,10 @@ const ArticleData = [
   },
 ];
 function Article() {
-  const navigation = useNavigate();
-  const onNavigateArticleDetail = () => {
-    // navigation("/type/tree");
-  };
+  // const navigation = useNavigate();
+  // const onNavigateArticleDetail = () => {
+  //   // navigation("/type/tree");
+  // };
   return (
     <div className="m-10">
       <p className="underline underline-offset-8 font-bold text-center mb-10">
