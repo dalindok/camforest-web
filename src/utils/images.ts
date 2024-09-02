@@ -1,4 +1,3 @@
-import { log } from "console";
 import logo from "../assets/about_us/2.png";
 import aboutUs from "../assets/about_us/aboutus.png";
 import dalin from "../assets/about_us/dalin.png";

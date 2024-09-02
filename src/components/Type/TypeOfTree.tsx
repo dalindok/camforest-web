@@ -26,7 +26,7 @@ const TypeData = [
 function TypeOfTree() {
   const navigation = useNavigate();
   const onNavigateTree = () => {
-    navigation("/type/tree");
+    navigation("/article");
   };
   return (
     <div>
