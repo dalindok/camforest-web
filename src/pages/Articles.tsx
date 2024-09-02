@@ -1,11 +1,11 @@
-import CheungChap from "../assets/articles/CheungChap.jpg";
 import Detail from "../components/Detail";
+import { HomeImages } from "../utils/images";
 function ArticlesPage() {
   return (
     <div className="flex flex-row justify-between ">
       <div className="w-1/2">
         <img
-          src={CheungChap}
+          src={HomeImages.cheungChap}
           alt="CheungChap"
           className=" h-screen w-full p-5"
         />
