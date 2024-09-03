@@ -4,6 +4,7 @@ import TypesPage from "../pages/TypesPage";
 import AboutUsPage from "../pages/AboutUsPage";
 import ArticlesPage from "../pages/ArticlesPage";
 import ArticlesDetailPage from "../pages/ArticlesDetailPage";
+import PageNotFound from "../components/PageNotFound";
 
 const RouteNavigation = () => {
   return (
@@ -13,6 +14,7 @@ const RouteNavigation = () => {
       <Route path="/about" element={<AboutUsPage />} />
       <Route path="/article/:id" element={<ArticlesPage />} />
       <Route path="/article-detail/:id" element={<ArticlesDetailPage />} />
+      <Route path="*" element={<PageNotFound />} />
     </Routes>
   );
 };
