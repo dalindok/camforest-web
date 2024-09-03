@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { BiSearchAlt } from "react-icons/bi";
-import { TreeImages } from "../../utils/images";
-
-function Search() {
+interface Banner {
+  data: ICategories.CategoriesData;
+}
+function Search(props: Banner) {
   const [searchTerm, setSearchTerm] = useState("");
 
   const handleChange = (event: any) => {
@@ -12,7 +13,7 @@ function Search() {
   return (
     <div className="relative w-full h-screen mt-5">
       <img
-        src={TreeImages.flower}
+        src={props.data.imageUrl}
         alt="background of search"
         className="object-cover h-screen w-full rounded-md"
       />

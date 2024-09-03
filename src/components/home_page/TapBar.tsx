@@ -14,7 +14,7 @@ function TapBar() {
     navigation("/type", { replace: true });
   };
   return (
-    <div className="justify-between flex flex-row seld-center pt-3 px-5">
+    <div className="justify-between flex flex-row seld-center p-5 sticky top-0 z-10 bg-slate-100">
       <img
         src={HomeImages.logo}
         alt="logo page"
