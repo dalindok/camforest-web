@@ -1,15 +1,17 @@
-interface Mission {
+interface IMission {
   data: IAboutUs.OurMission[];
 }
 
-function Mission(props: Mission) {
+function Mission(props: IMission) {
   return (
-    <div className="w-screen h-screen bg-gray-100 flex items-center justify-center">
-      <div className="container mx-auto h-full flex flex-col justify-center px-6">
+    <div className="bg-gray-100 flex items-center justify-center mt-10">
+      <div className="container mx-auto flex flex-col justify-center px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
           <div className="text-left">
-            <h2 className="text-5xl font-bold">{props.data[0].title}</h2>
-            <p className="text-2xl mt-4 max-w-md">
+            <h2 className="text-3xl sm:text-5xl font-bold">
+              {props.data[0].title}
+            </h2>
+            <p className="text-xl sm:text-2xl mt-4 max-w-md">
               {props.data[0].description}
             </p>
           </div>

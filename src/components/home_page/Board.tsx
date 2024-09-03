@@ -27,9 +27,13 @@ const Board = (props: IBanner) => {
               alt="board"
               className="object-cover rounded-lg"
             />
-            <div className="absolute flex items-center flex-col bottom-20 right-28 p-10">
-              <p className="text-4xl font-bold italic">{item.title}</p>
-              <p className="text-5xl m-10 font-light">{item.description}</p>
+            <div className="absolute flex items-center flex-col bottom-0 right-0 md:bottom-5 md:right-5 lg:bottom-20 lg:right-28 p-10">
+              <p className="md:text-2xl lg:text-4xl font-bold italic">
+                {item.title}
+              </p>
+              <p className="md:text-xl lg:text-3xl md:m-10 font-light">
+                {item.description}
+              </p>
             </div>
           </div>
           // </Slider>

@@ -12,13 +12,13 @@ const Search = (props: IBannerSearch) => {
   };
 
   return (
-    <div className="relative w-full h-screen px-5">
+    <div className="relative w-full md:h-screen px-5">
       <img
         src={PageTypeImages.bg}
         alt="background of search"
-        className="object-cover h-screen sm:object-fill sm:w-full rounded-lg"
+        className="object-cover md:h-screen sm:object-fill sm:w-full rounded-lg"
       />
-      <div className="absolute top-20 left-1/2 transform -translate-x-1/2 w-full max-w-md">
+      <div className="absolute top-3 sm:top-20 left-1/2 transform -translate-x-1/2 w-full max-w-md">
         <div className="relative">
           <input
             type="text"

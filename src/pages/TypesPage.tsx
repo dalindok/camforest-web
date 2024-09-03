@@ -12,7 +12,7 @@ function TypesPage() {
   const { data: categoriesData, loading: loadingCategories } =
     useRequest(getCategories);
   return (
-    <div className="bg-slate-100">
+    <div className="bg-slate-100 h-screen">
       <TapBar />
       {loadingBanner || loadingCategories ? (
         <Loading />

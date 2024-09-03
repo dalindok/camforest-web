@@ -11,13 +11,13 @@ function Search(props: Banner) {
   };
 
   return (
-    <div className="relative w-full h-screen mt-5">
+    <div className="relative w-full sm:h-screen px-5 bg-slate-100">
       <img
         src={props.data.imageUrl}
         alt="background of search"
-        className="object-cover h-screen w-full rounded-md"
+        className="object-cover sm:h-screen w-full rounded-md"
       />
-      <div className="absolute top-20 left-1/2 transform -translate-x-1/2 w-full max-w-md">
+      <div className="absolute top-3 sm:top-20 left-1/2 transform -translate-x-1/2 w-full max-w-md">
         <div className="relative">
           <input
             type="text"

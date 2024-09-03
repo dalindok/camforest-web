@@ -10,16 +10,16 @@ function ArticlesPage() {
     getArticleDetails(Number(param.id))
   );
   return (
-    <div className="flex flex-row justify-between">
+    <div className="flex flex-col sm:flex-row justify-between">
       {loading ? (
         <Loading />
       ) : (
         articleData?.data && (
-          <div className="w-1/2">
+          <div className="w-full sm:w-1/2 p-5">
             <img
               src={articleData.data.gallery[0].image_url}
               alt="CheungChap"
-              className=" h-screen w-full p-5"
+              className="w-full rounded-lg"
             />
           </div>
         )

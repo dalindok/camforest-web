@@ -10,7 +10,7 @@ import NoData from "../components/NoData";
 const AboutUsPage = () => {
   const { data: aboutusData, loading } = useRequest(getAboutUs);
   return (
-    <div className="h-full w-screen bg-slate-100">
+    <div className="h-screen w-full bg-slate-100">
       <TapBar />
       {loading ? (
         <Loading />
