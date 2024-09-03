@@ -12,6 +12,8 @@ import whyUs from "../assets/home_page/WhyUs.jpg";
 import flower from "../assets/page_tree/flower.jpeg";
 import Bg from "../assets/page_type/Bg.jpg";
 import trees from "../assets/page_type/trees.jpg";
+import enFlag from "../assets/images/uk.png";
+import kmFlag from "../assets/images/km.png";
 
 export const AboutUsImages = {
   logo,
@@ -38,4 +40,8 @@ export const PageTypeImages = {
   cheungChap,
   logo,
   tree: trees,
+};
+export const FlagImages = {
+  en: enFlag,
+  km: kmFlag,
 };

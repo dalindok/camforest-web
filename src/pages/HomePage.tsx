@@ -9,7 +9,6 @@ import NoData from "../components/NoData";
 
 const HomePage = () => {
   const { data: homeData, loading } = useRequest(getHome);
-
   return (
     <div className="bg-slate-100 w-full">
       <TapBar />

@@ -1,4 +1,5 @@
 import Axios, { AxiosRequestConfig } from "axios";
+import { ROUTE_API } from "../api/api";
 // import { ROUTE_API } from "../api/api";
 
 interface RetryQueueItem {
@@ -10,8 +11,8 @@ interface RetryQueueItem {
 const refreshAndRetryQueue: RetryQueueItem[] = [];
 
 const HttpUtil = Axios.create({
-  // baseURL: ROUTE_API.root,
-  baseURL: "http://localhost:4004/api/v1/",
+  baseURL: ROUTE_API.root,
+  // baseURL: "http://localhost:4004/api/v1/",
 });
 
 HttpUtil.interceptors.request.use(async (config) => {

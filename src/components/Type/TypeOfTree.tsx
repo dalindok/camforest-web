@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { useBreakpoint } from "../../hooks/layout";
+import { useBreakpoint } from "../../hooks/useBreakpoint";
 interface ITypeOfTree {
   data: ICategories.CategoriesData[];
 }
