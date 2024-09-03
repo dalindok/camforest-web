@@ -1,4 +1,3 @@
-import { HomeImages } from "../../utils/images";
 import Slider from "react-slick";
 
 interface IBanner {

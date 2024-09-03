@@ -4,6 +4,11 @@ declare namespace ICategories {
     isError: boolean;
     data: CategoriesData[];
   }
+  export interface ICategoriesDetailData {
+    message: string;
+    isError: boolean;
+    data: CategoriesData;
+  }
 
   export interface CategoriesData {
     id: number;

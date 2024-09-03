@@ -1,4 +1,3 @@
-import { HomeImages } from "../../utils/images";
 interface IWhyUs {
   data: IHome.WhyUs;
 }

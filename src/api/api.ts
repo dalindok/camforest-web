@@ -3,6 +3,8 @@ export const ROUTE_API = {
   home: "home",
   aboutUs: "about-us",
   categories: "category/list-category",
+  categoriesDetail: "category/category/:id",
   articlesByCategory: "article/list-article",
-  articleDetail: "article/list-article:id",
+  articleDetail: "article/article/:id",
+  banner: "banner/list-banner",
 };

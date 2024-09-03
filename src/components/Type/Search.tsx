@@ -1,18 +1,16 @@
 import { useState } from "react";
 import { BiSearchAlt } from "react-icons/bi";
 import { PageTypeImages } from "../../utils/images";
-
-function Search() {
+interface IBannerSearch {
+  data: IBanner.Banner[];
+}
+const Search = (props: IBannerSearch) => {
   const [searchTerm, setSearchTerm] = useState("");
 
   const handleChange = (event: any) => {
     setSearchTerm(event.target.value);
   };
 
-  //   const handleSearch = () => {
-  //     // Implement search logic here
-  //     console.log('Searching for:', searchTerm);
-  //   };
   return (
     <div className="relative w-full h-screen mt-5">
       <img
@@ -34,5 +32,5 @@ function Search() {
       </div>
     </div>
   );
-}
+};
 export default Search;
