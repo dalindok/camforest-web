@@ -20,15 +20,19 @@ const Board = (props: IBanner) => {
     <div>
       {props.data.map((item, index) => {
         return (
-          <Slider {...settings}>
-            <div className="relative p-5">
-              <img src={item.imageUrl} alt="board" className="object-cover" />
-              <div className="absolute flex items-center flex-col bottom-20 right-28 p-10">
-                <p className="text-4xl font-bold italic">{item.title}</p>
-                <p className="text-5xl m-10 font-light">{item.description}</p>
-              </div>
+          // <Slider {...settings}>
+          <div className="relative px-5">
+            <img
+              src={item.imageUrl}
+              alt="board"
+              className="object-cover rounded-lg"
+            />
+            <div className="absolute flex items-center flex-col bottom-20 right-28 p-10">
+              <p className="text-4xl font-bold italic">{item.title}</p>
+              <p className="text-5xl m-10 font-light">{item.description}</p>
             </div>
-          </Slider>
+          </div>
+          // </Slider>
         );
       })}
     </div>

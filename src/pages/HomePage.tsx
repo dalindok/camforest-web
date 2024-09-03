@@ -8,17 +8,10 @@ import Loading from "../components/Loading";
 import NoData from "../components/NoData";
 
 const HomePage = () => {
-  const { data: homeData, loading } = useRequest(getHome, {
-    onSuccess: (data) => {
-      // console.log("home", data);
-    },
-    onError: (err) => {
-      // console.log("error home", err);
-    },
-  });
+  const { data: homeData, loading } = useRequest(getHome);
 
   return (
-    <div className="bg-slate-100 w-full overflow-hidden">
+    <div className="bg-slate-100 w-full">
       <TapBar />
       {loading ? (
         <Loading />

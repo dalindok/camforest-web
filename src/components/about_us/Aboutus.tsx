@@ -4,9 +4,9 @@ interface AboutUs {
 
 const Aboutus = (props: AboutUs) => {
   return (
-    <div className="w-screen h-screen flex flex-row pb-10 pt-3">
+    <div className="w-screen h-screen flex flex-row px-5">
       <div
-        className="w-screen flex flex-col items-center justify-center bg-cover bg-center"
+        className="w-screen flex flex-col items-center justify-center bg-cover bg-center rounded-lg"
         style={{ backgroundImage: `url(${props.data.imageUrl})` }}>
         <div className="text-center">
           <h1 className="text-6xl font-bold text-white mt-2">
